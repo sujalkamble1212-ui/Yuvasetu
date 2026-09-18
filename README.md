@@ -26,17 +26,6 @@ A modern, full-stack college placement portal mini-project built with **React.js
 
 ---
 
-## 🔑 Default Demo Credentials
-
-Pre-seeded in the database for instant evaluation:
-
-| Role | Email | Password | Details |
-| :--- | :--- | :--- | :--- |
-| **🎓 Student** | `student@yuvasetu.edu` | `Student@123` | Sara Sharma (B.Tech CSE, 8.7 CGPA, 0 Backlogs) |
-| **🎓 Student 2** | `rahul@yuvasetu.edu` | `Rahul@123` | Rahul Verma (B.Tech IT, 7.8 CGPA, 1 Backlog) |
-| **🛡️ Admin / TPO** | `admin@yuvasetu.edu` | `Admin@123` | College Placement Cell Officer |
-
-*(Quick demo buttons are also integrated directly into the login screen).*
 
 ---
 
