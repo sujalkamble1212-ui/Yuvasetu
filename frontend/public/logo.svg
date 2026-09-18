@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 110" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFC"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00CEC9"/>
+      <stop offset="100%" stop-color="#7C5CFC"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#6C5CE7" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Emblem box -->
+  <rect x="4" y="8" width="88" height="88" rx="24" fill="url(#g1)" filter="url(#shadow)"/>
+
+  <!-- Inner accent ring -->
+  <rect x="10" y="14" width="76" height="76" rx="20" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+
+  <!-- Bridge arch (Setu) -->
+  <path d="M20 62 C 32 40, 64 40, 76 62" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Bridge verticals -->
+  <line x1="30" y1="61" x2="30" y2="50" stroke="rgba(255,255,255,0.85)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="48" y1="62" x2="48" y2="44" stroke="rgba(255,255,255,0.85)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="66" y1="61" x2="66" y2="50" stroke="rgba(255,255,255,0.85)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bridge deck -->
+  <line x1="18" y1="63" x2="78" y2="63" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Graduation cap (Yuva) -->
+  <polygon points="48,24 66,33 48,42 30,33" fill="#FFFFFF"/>
+  <path d="M62,35 L62,46 C62,49 56,53 48,53 C40,53 34,49 34,46 L34,35" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Cap tassel -->
+  <circle cx="67" cy="41" r="3" fill="#00CEC9"/>
+  <line x1="67" y1="44" x2="67" y2="52" stroke="#00CEC9" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Brand name -->
+  <text x="106" y="57" font-family="'Plus Jakarta Sans','Inter',system-ui,sans-serif" font-size="40" font-weight="800" fill="#1E1B4B" letter-spacing="-1">Yuva<tspan fill="#7C5CFC">Setu</tspan></text>
+
+  <!-- Tagline -->
+  <text x="108" y="79" font-family="'Plus Jakarta Sans','Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B" letter-spacing="1.4">CONNECTING STUDENTS TO CAREERS</text>
+</svg>

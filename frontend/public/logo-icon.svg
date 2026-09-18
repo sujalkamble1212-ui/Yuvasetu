@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <linearGradient id="ig1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFC"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <filter id="ishadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#6C5CE7" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="80" height="80" rx="22" fill="url(#ig1)" filter="url(#ishadow)"/>
+  <rect x="4" y="4" width="72" height="72" rx="18" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <!-- Bridge -->
+  <path d="M14 55 C 24 35, 56 35, 66 55" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <line x1="23" y1="54" x2="23" y2="44" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="40" y1="55" x2="40" y2="39" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="57" y1="54" x2="57" y2="44" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="12" y1="56" x2="68" y2="56" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Cap -->
+  <polygon points="40,20 57,29 40,38 23,29" fill="#FFFFFF"/>
+  <path d="M53,31 L53,42 C53,45 48,48 40,48 C32,48 27,45 27,42 L27,31" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="58" cy="36" r="3" fill="#00CEC9"/>
+  <line x1="58" y1="39" x2="58" y2="47" stroke="#00CEC9" stroke-width="2" stroke-linecap="round"/>
+</svg>

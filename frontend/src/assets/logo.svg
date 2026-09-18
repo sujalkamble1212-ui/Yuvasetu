@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" fill="none">
+  <defs>
+    <linearGradient id="yuvaGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C5CE7" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#6C5CE7" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Logo Emblem: Dynamic Setu (Bridge) & Rising Cap/Star -->
+  <g transform="translate(10, 10)">
+    <rect x="0" y="0" width="80" height="80" rx="22" fill="url(#yuvaGrad1)" filter="url(#glow)"/>
+    <path d="M18 56 C 28 36, 52 36, 62 56" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M26 55 L 26 46" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+    <path d="M40 55 L 40 42" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+    <path d="M54 55 L 54 46" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+    <path d="M40 22 L 56 30 L 40 38 L 24 30 Z" fill="#FFFFFF"/>
+    <path d="M52 32.5 L 52 42 C 52 44, 48 47, 40 47 C 32 47, 28 44, 28 42 L 28 32.5" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <circle cx="56" cy="38" r="2" fill="#00CEC9"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="106" y="52" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-size="34" font-weight="800" fill="#1E1B4B" letter-spacing="-0.5">
+    Yuva<tspan fill="#6C5CE7">Setu</tspan>
+  </text>
+  <text x="108" y="74" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#64748B" letter-spacing="1.2">
+    CONNECTING STUDENTS TO CAREERS
+  </text>
+</svg>
