@@ -65,7 +65,7 @@ git commit -m "feat: complete vercel deployment configuration"
 # 4. Create a new repository on GitHub (e.g. 'yuvasetu-online')
 # 5. Link and push to GitHub (replace with your repository URL)
 git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY_NAME>.git
+git remote add origin https://github.com/sujalkamble1212-ui/Yuvasetu.git
 git push -u origin main
 ```
 
