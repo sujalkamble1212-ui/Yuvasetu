@@ -109,7 +109,7 @@ const Sidebar = ({ isOpen, onClose }) => {
               textTransform: 'uppercase', letterSpacing: '0.06em',
             }}
           >
-            {isAdmin ? '🛡️ Admin Portal' : '🎓 Student'}
+            {isAdmin ? 'Admin Portal' : 'Student'}
           </span>
         </div>
 

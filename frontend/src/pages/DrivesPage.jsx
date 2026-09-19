@@ -241,7 +241,7 @@ const DrivesPage = () => {
                       marginBottom: '12px',
                     }}
                   >
-                    💰 {drive.salaryPackage}
+                    {drive.salaryPackage}
                   </div>
 
                   <p

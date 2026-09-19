@@ -49,12 +49,12 @@ const ensureAdmin = async () => {
     });
 
     console.log('');
-    console.log('🛡️  ── Admin Account Bootstrapped ──────────────────');
-    console.log('🛡️  Name   : ' + admin.name);
-    console.log('🛡️  Email  : ' + admin.email);
-    console.log('🛡️  Role   : admin');
-    console.log('🛡️  Password: bcrypt-hashed with cost factor 12');
-    console.log('🛡️  ─────────────────────────────────────────────────');
+    console.log('── Admin Account Bootstrapped ──────────────────');
+    console.log('Name    : ' + admin.name);
+    console.log('Email   : ' + admin.email);
+    console.log('Role    : admin');
+    console.log('Password: bcrypt-hashed with cost factor 12');
+    console.log('─────────────────────────────────────────────────');
     console.log('');
   } catch (err) {
     if (err.code === 11000) {
