@@ -287,52 +287,78 @@ const Register = () => {
       </div>
 
       {/* ── Right Brand Panel ────────────────────────────────────────────── */}
-      <div className="auth-brand-panel">
+      <div
+        className="auth-brand-panel"
+        style={{
+          position: 'relative',
+          backgroundImage: `linear-gradient(180deg, rgba(13, 14, 18, 0.15) 0%, rgba(13, 14, 18, 0.6) 100%), url('/auth-illustration.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '48px 40px',
+        }}
+      >
+        {/* Top header badge */}
+        <div style={{ position: 'relative', zIndex: 2, width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
+          <div
+            style={{
+              display: 'inline-flex',
+              padding: '6px 18px',
+              borderRadius: '30px',
+              backgroundColor: 'rgba(15, 17, 26, 0.65)',
+              backdropFilter: 'blur(12px)',
+              fontSize: '12px',
+              fontWeight: 700,
+              letterSpacing: '0.06em',
+              border: '1px solid rgba(255, 255, 255, 0.2)',
+              color: '#FFFFFF',
+            }}
+          >
+            STUDENT REGISTRATION
+          </div>
+        </div>
+
+        {/* Bottom card with glassmorphism */}
         <div
           style={{
-            position: 'absolute', top: '-10%', right: '-10%',
-            width: '400px', height: '400px', borderRadius: '50%',
-            background: 'rgba(255,255,255,0.07)', filter: 'blur(50px)',
+            position: 'relative',
+            zIndex: 2,
+            width: '100%',
+            maxWidth: '480px',
+            backgroundColor: 'rgba(15, 17, 26, 0.82)',
+            backdropFilter: 'blur(20px)',
+            borderRadius: '22px',
+            padding: '24px 28px',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
+            boxShadow: '0 20px 50px rgba(0, 0, 0, 0.45)',
           }}
-        />
-        <div
-          style={{
-            position: 'absolute', bottom: '-15%', left: '-10%',
-            width: '450px', height: '450px', borderRadius: '50%',
-            background: 'rgba(0,0,0,0.12)', filter: 'blur(60px)',
-          }}
-        />
-
-        <div style={{ maxWidth: '500px', textAlign: 'center', position: 'relative', zIndex: 2 }}>
-          <img src="/logo.svg" alt="YuvaSetu" style={{ height: '52px', marginBottom: '22px', filter: 'brightness(0) invert(1)' }} />
-
-          <h1 style={{ fontSize: '36px', fontWeight: 800, marginBottom: '14px', color: '#FFFFFF', lineHeight: 1.2 }}>
-            Empower Your<br />Career Journey
-          </h1>
-          <p style={{ fontSize: '16px', opacity: 0.88, lineHeight: 1.6, marginBottom: '32px' }}>
-            Direct access to on-campus placement drives, automatic eligibility checks, and real-time application tracking.
+        >
+          <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#FFFFFF', marginBottom: '6px' }}>
+            Your Bridge to Opportunities
+          </h2>
+          <p style={{ fontSize: '13.5px', color: '#CBD5E1', lineHeight: 1.5, marginBottom: '16px' }}>
+            Build your profile, upload verified academic credentials, and apply directly to leading recruiters.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px', textAlign: 'left' }}>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              borderTop: '1px solid rgba(255, 255, 255, 0.12)',
+              paddingTop: '14px',
+            }}
+          >
             {[
-              { icon: '🎯', title: 'Smart Eligibility', sub: 'Instant CGPA & backlog check' },
-              { icon: '📄', title: 'Local Storage',     sub: 'Safe resume & photo uploads' },
-              { icon: '📊', title: 'Live Tracking',     sub: 'Real-time application status' },
-              { icon: '🏢', title: 'Top Recruiters',    sub: '50+ verified companies' },
-            ].map((f) => (
-              <div
-                key={f.title}
-                style={{
-                  background: 'rgba(255,255,255,0.11)',
-                  backdropFilter: 'blur(10px)',
-                  padding: '16px',
-                  borderRadius: '16px',
-                  border: '1px solid rgba(255,255,255,0.18)',
-                }}
-              >
-                <div style={{ fontSize: '20px', marginBottom: '6px' }}>{f.icon}</div>
-                <div style={{ fontWeight: 700, fontSize: '14px', color: '#FFFFFF' }}>{f.title}</div>
-                <div style={{ fontSize: '12px', opacity: 0.75, marginTop: '2px' }}>{f.sub}</div>
+              ['Instant', 'Eligibility Check'],
+              ['Cloud', 'Resume Storage'],
+              ['Real-Time', 'Status Tracking'],
+            ].map(([val, lbl]) => (
+              <div key={lbl}>
+                <div style={{ fontSize: '16px', fontWeight: 800, color: '#FFFFFF' }}>{val}</div>
+                <div style={{ fontSize: '11px', color: '#94A3B8' }}>{lbl}</div>
               </div>
             ))}
           </div>

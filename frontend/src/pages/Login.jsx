@@ -233,89 +233,80 @@ const Login = () => {
       </div>
 
       {/* ── Right Brand Panel ────────────────────────────────────────────── */}
-      <div className="auth-brand-panel">
-        {/* Soft blobs */}
-        <div
-          style={{
-            position: 'absolute', top: '-10%', right: '-10%',
-            width: '400px', height: '400px', borderRadius: '50%',
-            background: 'rgba(255,255,255,0.07)', filter: 'blur(50px)',
-          }}
-        />
-        <div
-          style={{
-            position: 'absolute', bottom: '-15%', left: '-10%',
-            width: '450px', height: '450px', borderRadius: '50%',
-            background: 'rgba(0,0,0,0.12)', filter: 'blur(60px)',
-          }}
-        />
-
-        <div style={{ maxWidth: '520px', textAlign: 'center', position: 'relative', zIndex: 2 }}>
+      <div
+        className="auth-brand-panel"
+        style={{
+          position: 'relative',
+          backgroundImage: `linear-gradient(180deg, rgba(13, 14, 18, 0.15) 0%, rgba(13, 14, 18, 0.6) 100%), url('/auth-illustration.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '48px 40px',
+        }}
+      >
+        {/* Top header badge */}
+        <div style={{ position: 'relative', zIndex: 2, width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
           <div
             style={{
-              display: 'inline-flex', padding: '6px 18px', borderRadius: '30px',
-              backgroundColor: 'rgba(255,255,255,0.16)', backdropFilter: 'blur(10px)',
-              fontSize: '12px', fontWeight: 700, letterSpacing: '0.06em',
-              marginBottom: '20px', border: '1px solid rgba(255,255,255,0.25)',
+              display: 'inline-flex',
+              padding: '6px 18px',
+              borderRadius: '30px',
+              backgroundColor: 'rgba(15, 17, 26, 0.65)',
+              backdropFilter: 'blur(12px)',
+              fontSize: '12px',
+              fontWeight: 700,
+              letterSpacing: '0.06em',
+              border: '1px solid rgba(255, 255, 255, 0.2)',
+              color: '#FFFFFF',
             }}
           >
             CAMPUS PLACEMENT PORTAL
           </div>
+        </div>
 
-          <h1 style={{ fontSize: '42px', fontWeight: 800, lineHeight: 1.15, marginBottom: '14px', color: '#FFFFFF' }}>
-            Welcome to<br />Student Portal
-          </h1>
-          <p style={{ fontSize: '17px', opacity: 0.88, marginBottom: '36px', fontWeight: 500 }}>
-            "Connecting Students to Careers"
+        {/* Bottom card with glassmorphism */}
+        <div
+          style={{
+            position: 'relative',
+            zIndex: 2,
+            width: '100%',
+            maxWidth: '480px',
+            backgroundColor: 'rgba(15, 17, 26, 0.82)',
+            backdropFilter: 'blur(20px)',
+            borderRadius: '22px',
+            padding: '24px 28px',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
+            boxShadow: '0 20px 50px rgba(0, 0, 0, 0.45)',
+          }}
+        >
+          <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#FFFFFF', marginBottom: '6px' }}>
+            Empower Your Career Journey
+          </h2>
+          <p style={{ fontSize: '13.5px', color: '#CBD5E1', lineHeight: 1.5, marginBottom: '16px' }}>
+            Direct access to verified campus recruitment drives, automated eligibility validation, and live status updates.
           </p>
 
-          {/* Illustration card */}
           <div
             style={{
-              backgroundColor: 'rgba(255,255,255,0.1)',
-              backdropFilter: 'blur(16px)',
-              borderRadius: '24px',
-              padding: '28px',
-              border: '1px solid rgba(255,255,255,0.18)',
-              boxShadow: '0 20px 60px rgba(0,0,0,0.2)',
+              display: 'flex',
+              justifyContent: 'space-between',
+              borderTop: '1px solid rgba(255, 255, 255, 0.12)',
+              paddingTop: '14px',
             }}
           >
-            <svg viewBox="0 0 400 220" fill="none" style={{ width: '100%', maxHeight: '180px' }}>
-              <rect x="120" y="40" width="160" height="145" rx="16" fill="#FFFFFF" opacity="0.95"/>
-              <rect x="145" y="70"  width="110" height="8" rx="4" fill="#6C5CE7"/>
-              <rect x="145" y="92"  width="85"  height="6" rx="3" fill="#CBD5E1"/>
-              <rect x="145" y="108" width="95"  height="6" rx="3" fill="#CBD5E1"/>
-              <rect x="145" y="124" width="70"  height="6" rx="3" fill="#CBD5E1"/>
-              <circle cx="160" cy="155" r="10" fill="#00CEC9"/>
-              <circle cx="190" cy="155" r="10" fill="#6C5CE7"/>
-              {/* student 1 */}
-              <circle cx="90" cy="72" r="14" fill="#FFFFFF"/>
-              <path d="M70 130 C70 100,110 100,110 130" fill="#FFFFFF"/>
-              <line x1="80" y1="130" x2="80" y2="185" stroke="#FFFFFF" strokeWidth="6" strokeLinecap="round"/>
-              <line x1="100" y1="130" x2="100" y2="185" stroke="#FFFFFF" strokeWidth="6" strokeLinecap="round"/>
-              {/* student 2 */}
-              <circle cx="305" cy="48" r="14" fill="#FFFFFF"/>
-              <path d="M285 93 C285 72,325 72,325 93" fill="#FFFFFF"/>
-              <line x1="295" y1="93" x2="315" y2="128" stroke="#FFFFFF" strokeWidth="5" strokeLinecap="round"/>
-              <line x1="315" y1="128" x2="335" y2="128" stroke="#FFFFFF" strokeWidth="5" strokeLinecap="round"/>
-              {/* laptop */}
-              <rect x="252" y="72" width="26" height="18" rx="3" fill="#1E1B4B"/>
-              <polygon points="246,90 284,90 278,97 252,97" fill="#64748B"/>
-            </svg>
-
-            <div
-              style={{
-                display: 'flex', justifyContent: 'space-around',
-                marginTop: '16px', borderTop: '1px solid rgba(255,255,255,0.18)', paddingTop: '16px',
-              }}
-            >
-              {[['50+', 'Top Recruiters'], ['88%', 'Placement Rate'], ['28.5 LPA', 'Highest Pkg']].map(([val, lbl]) => (
-                <div key={lbl}>
-                  <div style={{ fontSize: '18px', fontWeight: 800, color: '#FFFFFF' }}>{val}</div>
-                  <div style={{ fontSize: '11px', opacity: 0.75 }}>{lbl}</div>
-                </div>
-              ))}
-            </div>
+            {[
+              ['50+', 'Top Recruiters'],
+              ['88%', 'Placement Rate'],
+              ['28.5 LPA', 'Highest Pkg'],
+            ].map(([val, lbl]) => (
+              <div key={lbl}>
+                <div style={{ fontSize: '18px', fontWeight: 800, color: '#FFFFFF' }}>{val}</div>
+                <div style={{ fontSize: '11px', color: '#94A3B8' }}>{lbl}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
