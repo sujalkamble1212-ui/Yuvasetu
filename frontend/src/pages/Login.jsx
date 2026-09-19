@@ -232,84 +232,17 @@ const Login = () => {
         </div>
       </div>
 
-      {/* ── Right Brand Panel ────────────────────────────────────────────── */}
+      {/* ── Right Brand Panel (Pure Image) ────────────────────────────────── */}
       <div
         className="auth-brand-panel"
         style={{
           position: 'relative',
-          backgroundImage: `linear-gradient(180deg, rgba(13, 14, 18, 0.15) 0%, rgba(13, 14, 18, 0.6) 100%), url('/auth-illustration.jpg')`,
+          backgroundImage: `url('/auth-illustration.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          padding: '48px 40px',
+          backgroundRepeat: 'no-repeat',
         }}
-      >
-        {/* Top header badge */}
-        <div style={{ position: 'relative', zIndex: 2, width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
-          <div
-            style={{
-              display: 'inline-flex',
-              padding: '6px 18px',
-              borderRadius: '30px',
-              backgroundColor: 'rgba(15, 17, 26, 0.65)',
-              backdropFilter: 'blur(12px)',
-              fontSize: '12px',
-              fontWeight: 700,
-              letterSpacing: '0.06em',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
-              color: '#FFFFFF',
-            }}
-          >
-            CAMPUS PLACEMENT PORTAL
-          </div>
-        </div>
-
-        {/* Bottom card with glassmorphism */}
-        <div
-          style={{
-            position: 'relative',
-            zIndex: 2,
-            width: '100%',
-            maxWidth: '480px',
-            backgroundColor: 'rgba(15, 17, 26, 0.82)',
-            backdropFilter: 'blur(20px)',
-            borderRadius: '22px',
-            padding: '24px 28px',
-            border: '1px solid rgba(255, 255, 255, 0.15)',
-            boxShadow: '0 20px 50px rgba(0, 0, 0, 0.45)',
-          }}
-        >
-          <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#FFFFFF', marginBottom: '6px' }}>
-            Empower Your Career Journey
-          </h2>
-          <p style={{ fontSize: '13.5px', color: '#CBD5E1', lineHeight: 1.5, marginBottom: '16px' }}>
-            Direct access to verified campus recruitment drives, automated eligibility validation, and live status updates.
-          </p>
-
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              borderTop: '1px solid rgba(255, 255, 255, 0.12)',
-              paddingTop: '14px',
-            }}
-          >
-            {[
-              ['50+', 'Top Recruiters'],
-              ['88%', 'Placement Rate'],
-              ['28.5 LPA', 'Highest Pkg'],
-            ].map(([val, lbl]) => (
-              <div key={lbl}>
-                <div style={{ fontSize: '18px', fontWeight: 800, color: '#FFFFFF' }}>{val}</div>
-                <div style={{ fontSize: '11px', color: '#94A3B8' }}>{lbl}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      />
 
       <style>{`
         @keyframes spin {
