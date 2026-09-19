@@ -4,6 +4,7 @@
   "private": true,
   "description": "YuvaSetu - Student Placement Portal",
   "scripts": {
+    "postinstall": "npm install --prefix frontend",
     "build": "npm run build --prefix frontend",
     "start": "node backend/src/server.js",
     "dev:frontend": "npm run dev --prefix frontend",
